@@ -1,0 +1,341 @@
+/*
+Green color for Login
+rgba(194,185,127,.6)
+Blue color for Create Account
+rgba(169,179,206,.6)
+Neutrel color for Hover
+rgba(126,137,135,.6)
+*/
+
+/*Global Selectors*/
+/*Box Model Fix*/
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Removing background from form elements*/
+form * {
+	background: none;
+}
+
+/*Type Selectors*/
+body {
+  background-color: #daefe9;
+}
+/*Removing styles from input fields from Forms*/
+input[type = text], input[type = password], input[type = submit], input[type = tel],
+textarea, button {
+	-webkit-appearence: none;
+	-moz-appearence: none;
+	border: none;
+	background: none;
+	-webkit-border-radius: 0;
+	-moz--border-radius: 0;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+}
+/*Removing oulining when Form elements are focused*/
+input[type = password]:focus,  input[type = text]:focus, input[type = tel]:focus, input[type = submit]:focus{
+	outline: none;
+}
+
+
+/*Header Selectors*/
+header {
+  overflow: auto;
+  background: white;
+  width: 100%;
+  z-index: 100;
+	box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+}
+header a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 25px 15px;
+}
+header p {
+  margin: 0;
+
+}
+  /*Navlinks*/
+  .navlinks {
+    float: left;
+    }
+	.navlinks a {
+		transition: all .5s ease-out;
+		border-bottom: 0px solid teal;
+		margin: 0;
+
+	}
+	.navlinks a:hover {
+		border-bottom: 8px solid teal;
+		padding: 25px 15px 17px 15px;
+		transition: all .5s ease-out;
+	}
+  /*Create Account*/
+  .createAccount {
+    float: right;
+  }
+	.createAccount a {
+		background: url(../_images/background/gradButtonHome.png);
+		background-color: rgba(169,179,206,.6);
+		padding: 25px 25px;
+		transition: background-color .5s ease-out;
+	}
+	.createAccount a:hover {
+		background: url(../_images/background/gradButtonHome.png);
+		background-color: rgba(126,137,135,.6);
+	}
+  /*Login*/
+  .loginButton {
+    float: right;
+	}
+	.loginButton a {
+		background: url(../_images/background/gradButtonHome.png);
+		background-color: rgba(194,185,127,.6);
+		padding: 25px 25px;
+		transition: background-color .5s ease-out;
+	}
+	.loginButton a:hover {
+		background: url(../_images/background/gradButtonHome.png);
+		background-color: rgba(126,137,135,.6);
+;
+	}
+/*Header Selectors End*/
+
+/*Form Elements Selectors for Login Form and Create Account Form*/
+
+	/*Selector for wrapper that covers the body when the form is displayed*/
+	.FormWrapper {
+		position: absolute;
+		top: 0px;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,.6);
+		z-index: 200;
+	}
+	/*Selectors for Divs in which forms are placed*/
+	.loginForm, .createAccountForm {
+		position: absolute;
+		opacity: 1;
+		transition: opacity .5s ease-out;
+		top: 60px;
+		background: white;
+		display: block;
+		padding: 30px 0 30px 0;
+		z-index: 300;
+	}
+	.loginForm {
+		 left: 30%;
+		 width: 40%;
+	 }
+	.createAccountForm {
+		 left: 15%;
+		 width: 70%;
+	 }
+	 /*Selectors for heading of the form*/
+	.loginForm h1, .createAccountForm h1{
+		margin-top: 0;
+		text-align: center;
+	}
+	/*Selectors for the divs that contain the input fields for each form element*/
+	.formDivMobNo, .formDivPassword, .formDivFirstName, .formDivLasttName,
+	.formDivMobileNo, .otp, .formDivEPassword, .formDivCPassword{
+		margin: 40px auto;
+		position: relative;
+		height: 50px;
+		width: 300px;
+		box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+	}
+	.formDivMobNo {
+		background: url(../_images/graphics/formMobile.png) no-repeat #fafafa;
+	}
+	.formDivPassword {
+		background: url(../_images/graphics/formPassword.png) no-repeat #fafafa;
+	}
+	.formDivFirstName, .formDivMobileNo, .formDivEPassword{
+		float: left;
+		margin-left: 10px;
+	}
+	.formDivLasttName, .formDivCPassword{
+		margin-left: 10px;
+		float: left;
+	}
+	.otp {
+		margin-left: 10px;
+		float: left;
+		width: 100px;
+	}
+	/*Selectors for Divs that display the form input divs in one line */
+	.nameWrapper, .mobileWrapper, .passwordWrapper{
+		margin: 0px auto;
+		overflow: auto;
+		width: 630px;
+	}
+  input[type = password], input[type = tel], input[type = text]{
+		margin-left: 30px;
+		height: 50px;
+		width: 270px;
+		padding: 10px 15px;
+  }
+	input[id = "createAccountOTP"] {
+		width: 80px;
+	}
+	label{
+		position: absolute;
+		display: inline;
+		top: 15px;
+		left: 45px;
+		cursor: text;
+		user-select: none;
+		pointer-events: none;
+		transition: all .5s ease-out ;
+	}
+	input[type= submit]{
+		display: block;
+		height: 50px;
+		width: 300px;
+		margin: 30px auto;
+		background: url(../_images/background/gradButtonLogin.png);
+		background-color: rgba(194,185,127,.6);
+		box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+		transition: background-color .5s ease-out;
+		margin-bottom: 10px;
+	}
+	input[value ="Create Account"], input[value =Back]{
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	input[value ="Create Account"] {
+		background-color: rgba(169,179,206,.6);
+	}
+	input[value =Back]{
+		background-color: rgba(169,203,183,.6);
+	}
+	input[type= submit]:hover {
+		background: url(../_images/background/gradButtonLogin.png);
+		background-color: rgba(126,137,135,.6);
+	}
+
+/*Div to hold wornings and errors*/
+.formAlets {
+	min-height: 160px;
+	margin: 20px auto;
+	width: 630px;
+}
+
+/*Carousel Selectors*/
+.carouselMainFeatures {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.carouselContainer {
+	width: 100%;
+	height :570px;
+	overflow: hidden;
+	position: relative;
+}
+
+    /*For each Carousel Selectors*/
+    .carouselDiv {
+			position: absolute;
+			top:0;
+			left: 5%;
+			height :550px;
+			display: inline-block;
+			width:90%;
+			margin: 0;
+			padding: 0;
+			box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.3);
+    }
+    .carouselImage {
+      width: 100%;
+			height: 550px;
+    }
+
+
+/*Talking Points*/
+.talkingPoints {
+	width: 90%;
+  margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+  overflow: auto;
+
+}
+  /*For each div*/
+  .talkingPointDiv {
+    float: left;
+    width: 33.3%;
+    padding: 0 2%;
+		border-right: 2px solid teal;
+  }
+	.talkingPointDiv:last-of-type {
+		border-right: none;
+	}
+	.talkingPointDiv h1 {
+		text-align: center;
+	}
+	.talkingPointDiv p {
+		text-align: justify;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Selectors for Javascript*/
+
+/*Class to make opacity Zero*/
+.zeroOpacity {
+	transition: opacity .5s ease-out;
+	opacity: 0;
+}
+/*Class to hide the content*/
+.hidden {
+	display: none;
+}
+/*Class to stop scrolling*/
+.hideScrollbars {
+    overflow: hidden;
+}
+/*Class to move label up when focus is on form input*/
+.focusLabel {
+	position: absolute;
+	transform: translatey(-40px);
+}
+.transitionCarouselLeft, .transitionCarouselRight {
+	opacity: .4;
+	transform: scale(.5, .5);
+	height: 550px;
+	transition: all .8s ease-out;
+	position: absolute;
+
+}
+.transitionCarouselLeft {
+		left: -50%;
+		z-index: 0;
+}
+.transitionCarouselRight {
+	left: 50%;
+	z-index: 0;
+}
+.transitionMain {
+	opacity: 1;
+	transform: scale(1, 1);
+	transition: all .8s ease-out;
+	z-index: 1;
+}

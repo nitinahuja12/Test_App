@@ -1,0 +1,152 @@
+ @charset "UTF-8";
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+	margin: 0px;
+	font-family: actor;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	height: 100%;
+	padding: 0 0 100% 0;
+	max-width: none;
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+a {
+}
+a:visited {
+}
+a:hover, a:active, a:focus {
+}
+#pageheader {
+	position: relative;
+	margin: 0px;
+	padding-top: 0px;
+	background-color: #DFDCDC;
+	height: 50px;
+	display: block;
+}
+.logo {
+	
+}
+nav {
+	position: absolute;
+	top: 0%;
+	margin: 0px;
+	height: 50px;
+	left: 305px;
+}
+.navlist {
+	margin: 0px;
+	height: 50px;
+	padding: 0px;
+}
+.navlist li  {
+	list-style: none;
+	display: block;
+	padding-top: 14px;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: 50px;
+	margin: 0px;
+	float: left;
+}
+.navlist a , .sidebarlist a{
+	color: rgba(0,0,0,0.57);
+	text-decoration: none;
+	font-family: pt-sans;
+	font-style: normal;
+	font-weight: 600;
+	font-variant: normal;
+	font-size: 1em;
+}
+.navlist a:hover , .navlist a:active , .navlist a:focus , .sidebarlist a:hover, .sidebarlist a:active, .sidebarlist a:focus{
+	color: #000000;
+}
+.navlist #navactive , .sidebarlist #sidebaractive{
+	background-color: #A09999;
+}
+.navlist #navactive a, .sidebarlist #sidebaractive a {
+	font-weight: 800;
+	color: rgba(0,0,0,1.00);
+	font-style: normal;
+}
+.navleft {
+	height: 50px;
+	padding-top: 16px;
+	padding-bottom: 10px;
+	position: static;
+	float: right;
+	top: 0%;
+	margin-right: 10px;
+}
+#divide {
+	position: relative;
+	display: block;
+}
+.sidebar {
+	background-color: #DFDCDC;
+	position: absolute;
+	width: 305px;
+	margin: 0px;
+	clear: right;
+	display: block;
+	float: left;
+	padding-bottom: 100%;
+}
+.sidebarlist {
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 0px;
+	float: none;
+}
+.sidebarlist li {
+	padding: 10px 20px;
+}
+.sidebar .add {
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	font-family: actor;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.8em;
+	margin: 5px auto;
+	width: 95%;
+	height: auto;
+	padding: 1px;
+}
+.addcontent {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+}
+.addsign {
+	border: 1px solid #4075ED;
+	border-radius: 4px;
+	padding-right: 2px;
+	padding-left: 2px;
+	text-align: center;
+	color: #4075ED;
+	width: 30px;
+	margin: 2px 2px 0px 4px;
+}
+.maincontent {
+	position: absolute;
+	display: block;
+	float: right;
+	padding-left: 3%;
+	text-align: justify;
+	padding-right: 3%;
+	left: 305px;
+}

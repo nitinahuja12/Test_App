@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Mediclogy | Healthcare for Everyone</title>
+  <link href="_css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="_css/home.css" rel="stylesheet" type="text/css">
+  <script src="_scripts/home.js" defer></script>
+</head>
+<body id= "homepage">
+  <header>
+
+ <!-- Navigation for Doctor/Patient specific Features -->
+    <nav class = "navigation">
+      <!--TODO: Need to Write in Detail, features available for Doctors, Patients and Talk about Mediclogy Ecosystem  -->
+      <div class = "navlinks">
+        <a href="#">Home</a>
+        <a href="#">Features for Doctors</a>
+        <a href="#">Features for Patients</a>
+        <a href="#">Mediclogy Ecosystem</a>
+      </div>
+    </nav>
+
+<!-- Div to Create Account -->
+    <div class= "createAccount">
+      <p><a href="#">Create Account</a></p>
+    </div>
+<!-- Div for Login -->
+    <div class= "loginButton">
+      <p><a href="#">Login</a></p>
+    </div>
+  </header>
+
+  <!-- Main Content with General Features -->
+  <article class = "mainbody">
+
+    <!-- TODO:Need to write details for General Features: Built with Simplicity in Mind, Security & Peace of Mind and A Connected Ecosystem -->
+
+      <!-- Carousel with features-->
+    <section class = "carouselMainFeatures">
+      <div class = "carouselContainer">
+
+
+        <div class = "carouselDiv" id = "carousel1">
+          <img class = "carouselImage" src = "_images/carousel_img01.jpg"/>
+        </div>
+
+        <div class = "carouselDiv" id = "carousel2">
+          <img class = "carouselImage" src = "_images/carousel_img02.jpg"/>
+        </div>
+
+        <div class = "carouselDiv" id = "carousel3">
+          <img class = "carouselImage" src = "_images/carousel_img03.jpg"/>
+        </div>
+
+        <div class = "carouselDiv" id = "carousel4">
+          <img class = "carouselImage" src = "_images/carousel_img01.jpg"/>
+        </div>
+
+        <div class = "carouselDiv" id = "carousel5">
+          <img class = "carouselImage" src = "_images/carousel_img02.jpg"/>
+        </div>
+
+        <div class = "carouselDiv" id = "carousel6">
+          <img class = "carouselImage" src = "_images/carousel_img03.jpg"/>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- Talking Points-->
+
+    <section class= "talkingPoints">
+
+      <div class= "talkingPointDiv">
+        <h1>Talking Point 1</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      </div>
+      <div class= "talkingPointDiv">
+        <h1>Talking Point 2</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      </div>
+      <div class= "talkingPointDiv">
+        <h1>Talking Point 3</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      </div>
+
+    </section>
+
+  </article>
+
+<!-- Divs initially hidden and made visible by Javascript -->
+
+  <!-- Div for Login  -->
+  <div class = "loginForm zeroOpacity hidden">
+    <h1>Login to Your Account</h1>
+    <form id = "userLogin">
+      <div class = "formDivMobNo">
+        <input id = "LoginMobno" name = "loginMobno" required type = "tel" autocomplete = "tel-local"/>
+        <label for= "mobno">Mobile Number</label>
+      </div>
+      <div class = "formDivPassword">
+        <input id ="LoginPass" name = "loginPassword" required type = "password" autocomplete = "current-password"/>
+        <label for "pass">Password</label>
+        </div>
+      <input type= "submit" value ="Login">
+    </form>
+    <div class = "formAlets">
+
+    </div>
+      <input type= "submit" value ="Create Account">
+      <input type= "submit" value ="Back">
+  </div>
+
+
+  <!-- Div for Creating Account -->
+  <div class = "createAccountForm zeroOpacity hidden">
+    <h1>Create an Account</h1>
+    <form id = "createAccount">
+      <div class = "nameWrapper">
+        <div class = "formDivFirstName">
+          <input id = "createAccountFirstName" name = "firstName" required type = "text" autocomplete = ""/>
+          <label for= "mobno">First Name</label>
+        </div>
+        <div class = "formDivLasttName">
+          <input id = "createAccountLastName" name = "lastName" required type = "text" autocomplete = ""/>
+          <label for= "mobno">Last Name</label>
+        </div>
+      </div>
+      <div class = "mobileWrapper">
+        <div class = "formDivMobileNo">
+        <input id ="createAccountMobileNo" name = "mobileNo" required type = "tel" autocomplete = ""/>
+        <label for "pass">Mobile Number</label>
+        </div>
+        <div class = "otp">
+          <input id ="createAccountOTP" name = "otp" required type = "password" autocomplete = ""/>
+          <label for "pass">OTP</label>
+        </div>
+      </div>
+      <div class = "passwordWrapper">
+        <div class = "formDivEPassword">
+          <input id ="createAccountPassword" name = "password" required type = "password" autocomplete = ""/>
+          <label for "pass">Enter Password</label>
+        </div>
+        <div class = "formDivCPassword">
+          <input id ="createAccountCPassword" name = "password" required type = "password" autocomplete = ""/>
+          <label for "pass">Confirm Password</label>
+        </div>
+      </div>
+      <input type= "submit" value ="Create Account">
+    </form>
+    <div class = "formAlets">
+
+    </div>
+    <input type= "submit" value ="Back">
+  </div>
+  <footer>
+    <p>Copyright: Nitin Ahuja</p>
+  </footer>
+
+  <div class = "FormWrapper hidden">
+  </div>
+</body>
